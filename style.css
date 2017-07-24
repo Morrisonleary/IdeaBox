@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
+  margin: auto;
 }
 
 body {
@@ -132,7 +132,8 @@ img {
   height: 20px;
 }
 
-@media (max-width: 630px) {
+
+/*@media (m-width: 420px) {
   .save {
     width: 60%;
   }
@@ -149,12 +150,12 @@ img {
   .idea-card {
     width: 60%;
   }
-}
+}*/
 
 @media (max-width: 800px) {
   .header-box {
     height: 50vh;
-    margin-top: -6%;
+    margin-top: -4%;
   }
   .save {
     width: 80%;
