@@ -1,168 +1,172 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-}
-
-img {
-  height: 50px;
-  width: 50px;
-}
-
-h1, h2 {
-  font-family: font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-  text-align: center;
-}
-
-h2 {
-  color: #6d6e71;
-  display: inline-block;
-}
-
-p {
-  font-family: 'Open Sans', sans-serif;
-  color: #939598
-}
-
-article {
-  border-bottom: #d1d3d4;
-  border-bottom-style: solid;
-  position: relative;
-  margin-bottom: 25px;
-}
-
-fieldset {
-  border: none;
-  padding: 0;
-}
-
-legend {
-  display: none;
-}
-
-button {
-  border: none;
-  margin: auto;
-  display: block;
+  margin: 0px;
 }
 
 body {
-  display: flex;
-  flex-wrap: wrap;
+  font-family: font-family: 'Roboto', sans-serif;
 }
+
+.header-box {
+  background-color: #E5F3F2;
+  height: 40vh;
+  margin-top: -2%;
+  text-align: center;
+}
+
+span {
+  color: #00A79D;
+}
+
+h1 {
+  color: #6D6E71;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  margin: 20px 0px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #6D6E71;
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 100%;
+  float: left;
+}
+
+p.body-text {
+  margin-bottom: 10px;
+}
+
+.delete-btn {
+  background-image: url('./images/delete.svg');
+  border: none;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+
+.delete-btn:hover {
+  background-image: url('./images/delete-hover.svg');
+}
+
+.downvote-btn {
+  background-image: url('./images/down-vote.svg');
+}
+
+.downvote-btn:hover {
+  background-image: url('./images/down-vote-hover.svg');
+}
+
+.upvote-btn {
+  background-image: url('images/up-vote.svg');
+}
+
+.upvote-btn:hover {
+  background-image: url('./images/up-vote-hover.svg');
+}
+
+.upvote-btn, .downvote-btn, .delete-btn {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+/* Input Controls */
 
 input {
+  border: 2px solid #939598;
   display: block;
+  height: 35px;
   margin: auto;
-  width: 75%;
-  height: 25px;
-  padding-left: 3px;
+  margin-bottom: 2%;
+  outline: none;
+  width: 40%;
+  font-size: 18px;
 }
 
-.search-area {
-  width: 75%;
-  margin: auto;
-}
-
-.quality {
-  color: #6d6e71;
-  width: 100%;
-  margin: 10px auto;
-}
-
-.form-container {
-  background: #e5f3f2;
-}
-
-.idea-container {
-  width: 75%;
-  margin: auto;
-}
-
-.idea-text {
-  margin: 25px auto;
-}
-
-#quality-word {
-  display: inline-block;
-  line-height: 20px;
-  vertical-align: middle;
-  margin-bottom: 15px;
-  margin-left: 5px;
-}
-
-#idea {
-  color: #00a79d;
-}
-
-#box {
-  color: #6d6e71;
-}
-
-#save {
-  background: #00a79d;
+.save {
+  background-color: #00A79D;
+  border: 2px solid #045E55;
   color: #FFFFFF;
-  width: 75%;
-  height: 25px;
-  margin-bottom: 25px;
+  cursor: pointer;
+  height: 35px;
+  outline: none;
+  width: 40%;
+  font-size: 18px;
 }
 
-#save:hover {
-  background: #045e55;
+.save:hover {
+  background-color: #045E55;
 }
 
-#save:disabled {
-  background: #cccccc;
+.search {
+  margin: 20px auto;
+  width: 40%;
 }
 
-#delete {
-  background-image: ;
+.body-text {
+  color: #939598;
+}
+
+.idea-card {
+  width: 40%;
+  margin: auto;
+}
+
+#quality {
+  color: #6D6E71;
+  line-height: 16px;
+  margin: 15px 15px 20px 0px;
+}
+
+#quality img {
+  margin-right: 15px;
+  vertical-align: top;
+}
+
+img {
   width: 20px;
   height: 20px;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
-#delete:hover {
-  background-image: ;
+@media (max-width: 630px) {
+  .save {
+    width: 60%;
+  }
+  .card {
+    width: 100%;
+  }
+  input {
+    width: 60%;
+    margin-bottom: 10%;
+  }
+  .search {
+    width: 59%;
+  }
+  .idea-card {
+    width: 60%;
+  }
 }
 
-#upvote, #downvote, #quality {
-  margin-left: 5px;
-}
-
-#upvote {
-  background-image: ;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-}
-
-#upvote:hover {
-  background-image: ;
-}
-
-#downvote {
-  background-image: ;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-}
-
-#downvote:hover {
-  background-image: ;
-}
-
-#search {
-  margin: 25px auto;
-  width: 100%;
-}
-
-#body {
-  margin: 10px auto;
+@media (max-width: 800px) {
+  .header-box {
+    height: 40vh;
+    margin-top: -5%;
+  }
+  .save {
+    width: 80%;
+  }
+  input {
+    width: 80%;
+  }
+  .search {
+    width: 77%;
+    margin-top: 5%;
+  }
+  .idea-card {
+    width: 90%;
+  }
 }
